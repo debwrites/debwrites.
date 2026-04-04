@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Deb Writes</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+   <style>
+     :root {
+        --sage: #A3AE98;
+ --sage-dark: #8E9A84;
+  --bg: #F7F5F2;
+  --bg-soft: #EFECE7;
+    --text: #1F1F1F;
+    --muted: #5C5C5C;
+     --white: #FFFFFF;
+      --border: #DDD8D1;
+      --max-width: 1100px;
+       --radius: 14px;
+        --shadow: 0 10px 30px rgba(31, 31, 31, 0.06);
+          
+          
+            box-sizing: border-box;
+             margin: 0;
+ padding: 0;
+          }
+  html {
+    scroll-behavior: smooth;
+     }
+      body {
+          font-family: "Inter", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+             }
+             img {
+                  display: block;
+                   max-width: 100%;
+                   border-radius: 12px;
+                   }
+                   a {
+                     color: inherit;
+                      text-decoration: none;
+                        }
+              .container {
+               width: min(var(--max-width), calc(100% - 2rem));
+                 margin: 0 auto;
+                }
+                     .section {
+                   padding: 5rem 0;
+                           }
+                   .section-soft {
+                        background: var(--bg-soft);
+                           }
+                        .eyebrow {
+                       font-size: 0.9rem;
+                           font-weight: 600;
+                           color: var(--sage-dark);
+                          text-transform: uppercase;
+                         letter-spacing: 0.08em;
+                          margin-bottom: 1rem;
+                               }
+                      h1, h2, h3 {
+                              font-family: "Playfair Display", serif;
+                                 font-weight: 600;
+                                  line-height: 1.15;
+                               }
+                          h1 {
+                           font-size: clamp(2.5rem, 6vw, 4.6rem);
+                                max-width: 10ch;
+                              margin-bottom: 1.25rem;
+                                      }
+                               h2 {
+                                 font-size: clamp(2rem, 4vw, 3rem);
+                             margin-bottom: 1rem;
+                               text-align: center;
+                                }
+                           h3 {
+                                  font-size: 1.6rem;
+                      margin-bottom: 0.75rem;
+                                     }
+                           p {
+                                  color: var(--muted);
+                                font-size: 1.05rem;
+                                     }
+                                       .lead {
+                                      font-size: 1.15rem;
+                                     max-width: 34rem;
+                                          }
+                                         .btn {
+                                   display: inline-block;
+                       padding: 0.95rem 1.4rem;
+                    border-radius: 10px;
+                     background: var(--sage);
+                     color: var(--white);
+                  font-weight: 600;
+               transition: 0.2s ease;
+                    box-shadow: var(--shadow);
+              }
+                  .btn:hover {
+                          background: var(--sage-dark);
+                               transform: translateY(-1px);
+                        }
+                          .btn-secondary {
+                background: transparent;
+                            color: var(--text);
+                         border: 1px solid var(--border);
+                    box-shadow: none;
+                           }
+                                 .btn-secondary:hover {
+                               background: var(--white);
+                             color: var(--text);
+                                    }
+                                            /* Header */
+                            .site-header {
+                       position: sticky;
+                          top: 0;
+                       z-index: 20;
+                   background: rgba(247, 245, 242, 0.92);
+                        backdrop-filter: blur(12px);
+                               border-bottom: 1px solid rgba(221, 216, 209, 0.7);
+                             }
+                        .header-inner {
+                            min-height: 84px;
+                           display: flex;
+                           align-items: center;
+                           justify-content: space-between;
+                      gap: 1rem;
+                             }
+                     .logo {
+                              font-family: "Playfair Display", serif;
+                            font-size: 1.5rem;
+                               letter-spacing: 0.04em;
+                                 }
+                                   .nav {
+                                 display: flex;
+                              align-items: center;
+                                      gap: 1.5rem;
+                                }
+                                    .nav a {
+                                         color: var(--muted);
+                                   font-weight: 500;
+                                         }
+                                          .nav a:hover {
+                                      color: var(--text);
+                                         }
+                                   /* Hero */
+                               .hero {
+                              padding: 6rem 0 5rem;
+                                     }
+                                     .hero-grid {
+                               display: grid;
+                               grid-template-columns: 1.1fr 0.9fr;
+                              gap: 3rem;
+                                  align-items: center;
+                                      }
+                                    .hero-copy p {
+                                 margin-bottom: 1.8rem;
+                                  }
+                                        .hero-copy {
+                                            max-width: 520px;
+                               }
+                             .hero-actions {
+                         display: flex;
+                                    gap: 1rem;
+                                       flex-wrap: wrap;
+                                    }
+                                            .hero-visual {
+                                   min-height: 460px;
+                                  position: relative;
+                                 overflow: hidden;
+                           border-radius: 28px;
+               background:
+                               radial-gradient(circle at top right, rgba(163, 174, 152, 0.22), transparent 45%),
+                         radial-gradient(circle at bottom left, rgba(142, 154, 132, 0.14), transparent 40%),
+                               linear-gradient(180deg, #f2efe9 0%, #ece8e2 100%);
+                            }
+                          .shape {
+                        position: absolute;
+                      border-radius: 999px;
+               background: rgba(163, 174, 152, 0.22);
+ filter: blur(4px);
+  }
+  .shape-1 {
+    width: 340px;
+    height: 340px;
+    top: -70px;
+     right: -50px;
+      }
+      .shape-2 {
+         width: 220px;
+          height: 220px;
+            bottom: 40px;
+            left: 30px;
+            background: rgba(142, 154, 132, 0.18);
+             }
+               .shape-3 {
+                 width: 160px;
+                  height: 160px;
+                  bottom: -20px;
+                  right: 100px;
+                  background: rgba(255, 255, 255, 0.45);
+                  }
+                  .visual-card {
+                    position: absolute;
+                     left: 50%;
+                     top: 50%;
+                     transform: translate(-50%, -50%);
+                       width: min(82%, 420px);
+                       background: rgba(255, 255, 255, 0.82);
+                       border: 1px solid rgba(221, 216, 209, 0.9);
+                       border-radius: 18px;
+                       padding: 1.5rem;
+                       box-shadow: var(--shadow);
+                       }
+                         .visual-card h3 {
+                             font-size: 1.35rem;
+                             margin-bottom: 0.75rem;
+                              }
+                               .visual-card p {
+                                font-size: 0.98rem;
+                                 }
+                                   /* Services */
+                                   .services-intro {
+                                    max-width: 42rem
+                                    margin 0 auto 3rem;
+                                    text-align:center
+                          }
+                           .services-grid {
+                           display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                     gap: 1.5rem;
+                                          }
+                        .service-card {
+                         background: var(--white);
+                   padding: 2rem 1.5rem;
+                border-radius: var(--radius);
+                          border: 1px solid var(--border);
+                     }
+             .service-icon {
+                 width: 48px;
+                    height: 48px;
+                     border-radius: 12px;
+                  background: rgba(163, 174, 152, 0.18);
+               display: grid;
+                place-items: center;
+                   font-size: 1.2rem;
+                   margin-bottom: 1.25rem;
+                    color: var(--sage-dark);
+                font-weight: 700;
+                  }
+                   .service-card p {
+                  font-size: 1rem;
+                  }
+                 /* Work */
+               .work-intro {
+                  max-width: 42rem;
+                        margin: 0 auto 3rem;
+                     text-align: center;
+                  }
+                      .work-grid {
+                             display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                      gap: 1.5rem;
+                         }
+                             .work-card {
+                          background: var(--white);
+                       border: 1px solid var(--border);
+                    border-radius: var(--radius);
+                  overflow: hidden;
+                   box-shadow: var(--shadow);
+                 transition: 0.2s ease;
+                     }
+                      .work-card:hover {
+                     transform: translateY(-3px);
+                       }
+                  .work-image {
+                aspect-ratio: 16 / 10;
+                background: linear-gradient(135deg, #dfe5da, #f3f0ea);
+                          }
+                  .work-image.one {
+                    background:
+                            linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),
+                     url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85? auto=format&fit=crop&w=1200&q=80') center/cover;
+                               }
+                                  .work-image.two {
+                                       background: 
+                                      linear-gradient(rgba(255,255,255,0.18), rgba(255,255,255,0.18)),
+                                           url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80') center/cover;
+                                           }
+                                       .work-image.three {
+                                                background:
+                                           linear-gradient(rgba(255,255,255,0.18), rgba(255,255,255,0.18)),
+                                                  url('https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1200&q=80') center/cover;
+                                                }
+                         .work-content {
+                                  padding: 1.4rem;
+                        }
+                     .work-content h3 {
+                      font-size: 1.45rem;
+                                    }
+                       .work-content p {
+             font-size: 1rem;
+                        margin-bottom: 1rem;
+                             }
+                           .work-link {
+                          font-weight: 600;
+                         color: var(--sage-dark);
+                      }
+                          /* About */
+                          .about-wrap {
+                           max-width: 760px;
+                          margin: 0 auto;
+                         text-align: center;
+                       }
+                          .about-wrap p {
+                       font-size: 1.08rem;
+               margin: 0 auto 1.2rem;
+                      max-width: 46rem;
+                }
+                 /* CTA */
+                   .cta-box {
+              background: var(--white);
+                     border: 1px solid var(--border);
+                  border-radius: 22px;
+                     padding: 3rem 2rem;
+                      text-align: center;
+                         box-shadow: var(--shadow);
+                   }
+                    .cta-box h2 {
+                         margin-bottom: 1rem;
+                       }
+                        .cta-box p {
+                             max-width: 38rem;
+                           margin: 0 auto 1.5rem;
+                       }
+                          /* Footer */
+                   .site-footer {
+                           padding: 2rem 0 3rem;
+                     }
+                 .footer-inner {
+                 display: flex;
+                 justify-content: space-between;
+                      gap: 1rem;
+                    align-items: center;
+               border-top: 1px solid var(--border);
+              padding-top: 1.5rem;
+                          color: var(--muted);
+                         font-size: 0.95rem;
+                              }
+                              .footer-links {
+                    display: flex;
+                gap: 1.25rem;
+                 flex-wrap: wrap;
+                                       }
+                       /* Responsive */
+                               @media (max-width: 900px) {
+                             .hero-grid,
+                           .services-grid,
+                     .work-grid {
+                              grid-template-columns: 1fr;
+                           }
+                        .hero-visual {
+                                 min-height: 320px;
+                        }
+                        .nav {
+                       display: none;
+                    }
+                     h1 {
+                 max-width: 100%;
+                    }
+          }
+              @media (max-width: 600px) {
+        .section {
+                   padding: 4rem 0;
+                                  }
+                               .hero {
+                             padding: 4.5rem 0 4rem;
+                                   }
+                        .header-inner {
+                                min-height: 72px;
+                          }
+                      .logo {
+                           font-size: 1.2rem;
+                         }
+                   .hero-actions {
+              flex-direction: column;
+                  align-items: flex-start;
+                        }
+                  .footer-inner {
+                               flex-direction: column;
+                            align-items: flex-start;
+                             }
+                             .section-soft p {
+margin-bottom: 10px;
+                             }           
+                            .section-soft a {
+                              display: inline-block;
+                              margin-bottom: 4px;
+                            }            
+                          .project-link {
+                            font-weight: 500;
+                          }
+                          .project-link :hover {
+                            text-decoration: underline;
+                          }
+                          }
+                 </style>
+                    </head>
+                         <body>
+                             <header class="site-header">
+                       <div class="container header-inner">
+             <a href="#" class="logo">DEB WRITES</a>
+            <nav class="nav" aria-label="Primary navigation">
+                            <a href="#home">Home</a>
+                              <a href="#work">Work</a>
+                              <a href="blog.html">Blog</a>
+                      <a href="#about">About</a>
+                   <a href="#contact">Contact</a>
+                    <a href="#contact" class="btn">Get in touch</a>
+                             </nav>
+                        </div>
+                     </header>
+                 <main>
+                 <section class="hero" id="home">
+                   <div class="container hero-grid">
+                         <div class="hero-copy">
+                        <p class="eyebrow">Clear, human writing</p>
+                       <h1>Good writing is clear, usable, and human.</h1>
+                    <p class="lead">
+                          I help businesses make their content clearer, more natural, easier to connect with, and easy to trust online through SEO articles, website copy, and brand-led writing.
+                              </p>
+                            <div class="hero-actions">
+                         <a href="#work" class="btn">See my work</a>
+                   </div>
+                              </div>
+                      <div class="hero-visual" aria-hidden="true">
+                         <div class="shape shape-1"></div>
+                  <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                 <div class="visual-card">
+                     <h3>What I bring</h3>
+                       <p>
+                    Clear thinking, natural tone, and content that feels written for  people first. Structured enough for search. Human enough to trust.
+                      </p>
+                           </div>
+                           </div>
+                         </div>
+                      </section>
+                      <section class="section section-soft" id="services">
+                  <div class="container">
+                <div class="services-intro">
+                   <p class="eyebrow">Services</p>
+                <h2>What I Do</h2>
+                <p>
+                I help businesses make their content clearer, more natural, and easier to trust.
+                       </p>
+                                 </div>
+                                   <div class="services-grid">
+                    <article class="service-card">
+         <div class="service-icon">01</div>
+         <h3>SEO Articles</h3>
+                  <p>
+                    Articles structured for search but written for real people, with clarity and readability first.
+                            </p>
+                    </article>
+                 <article class="service-card">
+                 <div class="service-icon">02</div>
+                    <h3>Website Copy</h3>
+                       </p>
+              Clear, natural website writing that helps people understand your offer and feel confident choosing you.
+                           </article>
+                                   <article class="service-card">
+                                  <div class="service-icon">03</div>
+                                 <h3>Brand Writing</h3>
+                                <p>
+                            Experience-led content that reflects how a place or brand actually feels, not just what it offers.
+                               </p>
+                               </article>
+                                      </div>
+                                                </div>
+                                  </section>
+                                         <section class="section" id="work">
+                                          <div class="container">
+                                               <div class="work-intro">
+                                   <p class="eyebrow">Portfolio</p>
+                            <h2>Selected Work</h2>
+                                 <p>
+                      A small selection of pieces focused on clarity, tone, and real-world readability.
+                </p>
+                                      </div>
+                                <div class="work-grid">
+                       <article class="work-card">
+                                                    <div class="work-image one"></div>
+                                         <div class="work-content">
+                                                       <h3>How Skylights Transform Indoor Spaces</h3>
+                                               <p>
+                                             Balancing SEO structure with readability for a guide on choosing and installing skylights.
+                                                 </p>
+                                                <a href="skylights.html" class="work-link">View project</a>
+                                                              </div>
+                                                </article>
+                                                    <article class="work-card">
+                                                    <div class="work-image two"></div>
+                                                    <div class="work-content">
+                                             <h3>Building Trust with an SEO Agency Partner</h3>
+                                          <p>
+                                                 Explaining how to maintain a strong client-agency relationshipwith clear, useful writing.
+                                         </p>
+                                             <a href="building-trust.html" class="work-link">View Project</a>
+                                                      </div>
+                                        </article>
+                                       <article class="work-card">
+                                     <div class="work-image three"></div>
+                                                     <div class="work-content">
+                                            <h3>A Real Experience of Luxury Hotel Stays</h3>
+                                                        <p>
+                                         Capturing the feel of a luxury hotel from a guest's perspective,  with tone and detail leading the piece.
+                                                   </p>
+                                                        <a href="hotel-experience.html" class="work-link">View project (on request)</a>
+                                                 </div>
+                                             </article>
+                               </div>
+                                            </div>
+                                               </section>
+                                           <section class="section section-soft" id="about">
+                          <div class="container about-wrap">
+                                    <p class="eyebrow">About</p>
+                                            <h2>Writing that makes things make sense</h2>
+                                               <p>
+                          I'm Deb, a copywriter who helps businesses sound clear and human in a world full of generic, overworked content.
+                                           </p>
+                             <p>
+                                                 My background is in Occupational Therapy, where clear communication,  real-world usability, and structured thinking matter every day.
+                                    </p>
+                                              <p>
+                                   Now, I apply those same principles to writing that feels clear, trustworthy, and easy to connect with.
+                                                </p>
+                                                    </div>
+                                               </section>
+                                           <section class="section" id="contact">
+                                         <div class="container">
+                                    <div class="cta-box">
+                                         <p class="eyebrow">Contact</p>
+                               <h2>Let's make your content clearer</h2>
+                                  <p>
+                              If your website or content feels too generic, too corporate, or not quite right, I can help shape it into something clearer, more natural, and easier to trust.
+                            </p>
+                          <a href="mailto:hello@debwrites.com" class="btn">Email me</a>
+                                  </div>
+                                         </div>
+                                   </section>
+                                      </main>
+                       <footer class="site-footer">
+                                     <div class="container footer-inner">
+                                  <p>Deb Writes</p>
+                                 <div class="footer-links">
+                              <a href="mailto:hello@debwrites.com">Email</a>
+                                   </div>
+                     </div>
+                               </footer>
+                            </body>
+                               </html>
+
+                                                                                                                                                                                 
+
+
+
+
