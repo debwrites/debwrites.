@@ -475,6 +475,14 @@ p {
 .project-link:hover {
   text-decoration: underline;
 }
+.inline-link {
+  color: var(--sage-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+.inline-link :hover {
+  text-decoration: underline;
+}
 .project-page.section :first-of-type {
   padding: top 3rem;
 }
