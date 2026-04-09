@@ -467,7 +467,10 @@ p {
   color: var(--sage-dark);
   font-weight: 600;
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: 20px;
+}
+.project-link + p {
+  margin-bottom: 28px;
 }
 .project-link:hover {
   text-decoration: underline;
