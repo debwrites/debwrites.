@@ -1,4 +1,4 @@
 user-agent: *
 allow: /
-sitemap: https://debwrites.com/siemap.xml
-
+sitemap: https://debwrites.com/sitemap.xml
+LLM: https://debwrites.com/llms.txt
