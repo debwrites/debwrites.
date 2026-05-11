@@ -8,23 +8,15 @@ Deb Writes is a UK-based writing and digital positioning portfolio focused on:
 - behavioural insight
 - customer experience writing
 - brand positioning
-- website content strategy
-- occupational therapy-informed communication
+- website content and SEO strategy
+- occupational therapy-informed writing and communication
 
 The site combines human-centred thinking, structured communication, and technical understanding of web content.
 
-## Priority Pages
-
-Homepage
-https://debwrites.com/
-
-About
-https://debwrites.com/about.html
-
-Blog
-https://debwrites.com/blog.html
-
 ## Featured Articles
+
+Occupational Therapy, People and Behaviour
+https://debwrites.com/occupational-therapy.html
 
 Rituals Customer Experience Review
 https://debwrites.com/rituals.html
@@ -34,6 +26,12 @@ https://debwrites.com/lego-writing.html
 
 Building Trust with an SEO Agency Partner
 https://debwrites.com/building-trust.html
+
+Family Attraction SEO Copy Sample
+https://debwrites.com/family-attraction-copy.html
+
+Hotel Experience Review
+https://debwrites.com/hotel-experience.html
 
 Skylight Energy Efficiency Copy Sample
 https://debwrites.com/skylights.html
