@@ -88,15 +88,16 @@ p {
 .btn {
   display: inline-block;
   padding: 0.95rem 1.4rem;
-  border-radius: 10px;
-  background: var(--sage);
-  color: var(--white);
+  border-radius: 999px;
+  background: #A3AE98;
+  color: #1f1f1f;
   font-weight: 600;
   transition: 0.2s ease;
   box-shadow: var(--shadow);
 }
 .btn:hover {
-  background: var(--sage-dark);
+  background: #8e9a84;
+  color: #1f1f1f;
   transform: translateY(-1px);
 }
 .btn-secondary {
