@@ -536,7 +536,9 @@ p {
     min-height: 320px;
   }
   .nav {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
   h1 {
     max-width: 100%;
