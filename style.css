@@ -547,8 +547,9 @@ p {
   }
   .nav-links {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1 rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem ;
   }
   .nav-links a {
     white-space: nowrap;
