@@ -569,9 +569,16 @@ p {
   .project-page {
     max-width: 60ch;
   }
-}
-.insight-grid {
+  .insight-grid {
   grid-template-columns: 1fr;
+}
+.featured-card{
+  grid-template-columns: 1fr;
+}
+.featured-card img {
+  height: 220px;
+  min-height: 220px;
+}
 }
 .project-hero {
   max-width: 760px;
