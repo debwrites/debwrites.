@@ -528,7 +528,7 @@ p {
 @media (max-width: 900px) {
   .hero-grid,
   .services-grid,
-  .work-grid
+  .work-grid,
   .insight-grid {
     grid-template-columns: 1fr;
   }
