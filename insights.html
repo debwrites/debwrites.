@@ -42,6 +42,25 @@
 <link rel="stylesheet" href="brand.css" >  
 <link rel="stylesheet" href="style.css" />
   </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", ()=> {
+  document.querySelectorAll("[data-featured-carousel]").forEach((carousel) => {
+    const slides = carousel.querySelectorAll("[data-featured-slide]");
+    const dots = carousel.querySelectorAll("[data-featured-dot]");
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        slides.forEach((slide, slideIndex) => {
+          slide.hidden = slideIndex !== index;
+        });
+
+        dots.forEach((item, dotIndex) => {
+          item.setAttribute("aria-pressed", dotIndex === index);
+        });
+      });
+    });
+  });});
+</script>
   <body>
     <header class="site-header">
      <div class="container header-inner">
