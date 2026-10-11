@@ -644,3 +644,58 @@ p {
 .project-page p {
   max-width: 60ch;
 }
+.faq-list {
+  max-width: 780px;
+  margin: 3rem auto 0;
+}
+
+.faq-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #d5d8cf;
+}
+
+.faq-item:first-child {
+  border-top: 1px solid #d5d8cf;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.faq-item summary::marker {
+  color: #929d84;
+}
+
+.faq-item p {
+  max-width: 680px;
+  margin: 1rem 0 0;
+}
+
+.faq-contact {
+  max-width: 780px;
+  margin: 4rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid #d5d8cf;
+}
+
+@media (max-width: 600px) {
+  .faq-list {
+    margin-top: 2rem;
+  }
+
+  .faq-item {
+    padding: 1rem 0;
+  }
+
+  .faq-item summary {
+    font-size: 1.05rem;
+  }
+
+  .faq-contact {
+    margin-top: 3rem;
+  }
+}
