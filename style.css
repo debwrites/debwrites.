@@ -705,3 +705,64 @@ p {
 .contact-email {
   font-size: 19px;
 }
+.featured-card[hidden] {
+  display: none !important;
+}
+
+.featured-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.featured-dots button {
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #c8cec2;
+  cursor: pointer;
+}
+
+.featured-dots button[aria-pressed="true"] {
+  background: #7f8c70;
+}
+
+.featured-dots button:focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 3px;
+}
+article-screenshot {
+  max-width: 760px;
+  margin: 2rem auto;
+}
+
+.article-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-screenshot figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+.article-image img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 1.5rem auto;
+}
+.article-screenshot {
+  max-width: 420px;
+  margin: 2rem 0;
+}
+.article-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

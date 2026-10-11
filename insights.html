@@ -71,17 +71,39 @@
   <section class="section">
     <div class="container">
 
-      <article class="featured-card">
-        <img src="backlinks.JPG" alt="Backlinks and SEO concept image">
-        <div class="featured-card-content">
-          <p class="card-label">Featured Insight</p>
-          <h2>What Are Backlinks and Why Do They Matter for SEO?</h2>
-          <p>
-            Backlinks can support search visability, but quality and relevance matter more than quantity. This article explains why backlinks matter and how thoughtful outreach can help.
-          </p>
-          <a href="backlinks-seo.html" class="text-link">Read article →</a>
-        </div>
-      </article>
+      <div class="featured-carousel" data-featured-carousel>
+  <article class="featured-card" data-featured-slide>
+    <img src="ai-search.jpeg" alt="AI search article">
+    <div class="featured-card-content">
+      <p class="card-label">Featured Insight</p>
+      <h2>How Quickly Can Google's AI Search Results Change?</h2>
+      <p>
+        I saw how quickly an AI search result about my business changed.
+        Here's what happened when I checked again.
+      </p>
+      <a href="ai-search-results.html" class="text-link">Read article →</a>
+    </div>
+  </article>
+
+  <article class="featured-card" data-featured-slide hidden>
+    <img src="backlinks.JPG" alt="Backlinks and SEO concept image">
+    <div class="featured-card-content">
+      <p class="card-label">Featured Insight</p>
+      <h2>What Are Backlinks and Why Do They Matter for SEO?</h2>
+      <p>
+        Backlinks can support search visibility, but quality and relevance
+        matter more than quantity. This article explains why backlinks matter
+        and how thoughtful outreach can help.
+      </p>
+      <a href="backlinks-seo.html" class="text-link">Read article →</a>
+    </div>
+  </article>
+
+  <div class="featured-dots" role="group" aria-label="Choose a featured article">
+    <button type="button" data-featured-dot aria-label="Show AI search article" aria-pressed="true"></button>
+    <button type="button" data-featured-dot aria-label="Show backlinks article" aria-pressed="false"></button>
+  </div>
+</div>
 
       <section class="insight-category">
         <h2>UX & Websites</h2>
@@ -287,6 +309,11 @@
       "headline":"What Occupational Therapy Taught Me About Human Behaviour",
       "url":"https://debwrites.com/Occupational-therapy-human-behaviour.html"
     },
+    {
+      "@type":"BlogPosting",
+      "headline":"How Quickly Can Google's AI Search Results Change?",
+      "url":"https://debwrites.com/ai-search-results.html"
+    }
   ]
 </script>
     </main>
