@@ -681,6 +681,9 @@ p {
   padding-top: 2rem;
   border-top: 1px solid #d5d8cf;
 }
+.faq-link {
+  font-size: 19px;
+}
 
 @media (max-width: 600px) {
   .faq-list {
@@ -698,4 +701,7 @@ p {
   .faq-contact {
     margin-top: 3rem;
   }
+}
+.contact-email {
+  font-size: 19px;
 }
