@@ -829,4 +829,10 @@ article-screenshot {
     width: 64px;
     height: 64px;
   }
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
 }
