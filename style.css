@@ -835,4 +835,42 @@ article-screenshot {
     justify-content: center;
     gap: 0.5rem;
   }
+  @media (max-width: 600px) {
+  .site-header .header-inner {
+    min-height: 0;
+    padding: 0.65rem 0.5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.35rem;
+  }
+
+  .site-header .logo {
+    flex: 0 0 auto;
+  }
+
+  .site-header .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .site-header .nav {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .site-header .nav a {
+    font-size: 0.68rem;
+    white-space: nowrap;
+  }
+
+  .site-header .nav .btn {
+    padding: 0.4rem 0.45rem;
+    font-size: 0.62rem;
+  }
+}
 }
