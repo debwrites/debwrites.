@@ -824,3 +824,9 @@ article-screenshot {
   background: var(--sage-dark);
   color: var(--white);
 }
+@media (max-width: 600px) {
+  .site-header .logo img {
+    width: 64px;
+    height: 64px;
+  }
+}
