@@ -872,5 +872,7 @@ article-screenshot {
     padding: 0.4rem 0.45rem;
     font-size: 0.62rem;
   }
+.project-page .article-start {
+  padding-top: 1rem;
 }
-}
+  }

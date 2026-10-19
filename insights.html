@@ -116,10 +116,23 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="container">
 
       <div class="featured-carousel" data-featured-carousel>
-  <article class="featured-card" data-featured-slide>
+        <article class="featured-card" data-featured-slide>
+  <img src="being-cited-by-ai-search.png" alt="A magnifying glass examining links in an AI search result">
+  <div class="featured-card-content">
+    <p class="card-label">Featured Insight</p>
+    <h2>Being Cited by AI Search Is Not the Same as Being Chosen</h2>
+    <p>
+      A citation may help someone notice a business, but it doesn't tell us
+      whether they'll click or what they'll do next.
+    </p>
+    <a href="being-cited-by-ai-search.html" class="text-link">Read article →</a>
+  </div>
+</article>
+  <article class="featured-card" data-featured-slide hidden>
     <img src="ai-search.jpeg" alt="AI search article">
     <div class="featured-card-content">
       <p class="card-label">Featured Insight</p>
+      
       <h2>How Quickly Can Google's AI Search Results Change?</h2>
       <p>
         I saw how quickly an AI search result about my business changed.
@@ -146,6 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <button type="button" class="btn featured-nav-button" data-featured-prev>Previous</button>
 
   <div class="featured-dots" role="group" aria-label="Choose a featured article">
+    <button type="button" data-featured-dot="role"="group" aria-label="Choose a featured article"></button>
     <button type="button" data-featured-dot aria-label="Show AI search article" aria-pressed="true"></button>
     <button type="button" data-featured-dot aria-label="Show backlinks article" aria-pressed="false"></button>
   </div>
